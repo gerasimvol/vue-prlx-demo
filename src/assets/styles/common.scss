@@ -1,0 +1,125 @@
+html,
+body {
+  background: $c-white;
+  color: $c-black;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  border: 7px solid $c-red;
+}
+
+h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 130px;
+  font-weight: 900;
+  font-style: italic;
+  margin-left: -15px;
+
+  @include mobile {
+    font-size: 70px;
+  }
+}
+
+h2 {
+  position: relative;
+  z-index: 2;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+
+  @include mobile {
+    font-size: 25px;
+  }
+}
+
+h3 {
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  font-weight: 400;
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+.it {
+  font-style: italic;
+}
+
+pre {
+  border-radius: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.comment {
+  color: $c-white;
+}
+
+.my {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 750px;
+  }
+
+  @include mobile {
+    max-width: 100%;
+  }
+}
+
+.red {
+  color: $c-red;
+}
+
+.header {
+  position: relative;
+  padding-top: 200px;
+
+  @include mobile {
+    padding-top: 50px;
+  }
+}
+
+.github-link {
+  box-sizing: content-box;
+  padding: 20px;
+  margin: -20px;
+  width: 40px;
+  cursor: pointer;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  transition: transform 0.5s;
+
+  path {
+    transition: fill 0.5s;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+
+    path {
+      fill: $c-red;
+    }
+  }
+}
+
+.main {
+  padding-top: 100px;
+}
