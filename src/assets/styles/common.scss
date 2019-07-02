@@ -10,7 +10,7 @@ body {
   justify-content: center;
 
   &__heart {
-    color: $c-red;
+    color: #d62829;
   }
 
   &__link {
@@ -18,7 +18,7 @@ body {
     text-decoration: none;
 
     &:hover {
-      color: $c-red;
+      color: $c-active;
     }
   }
 }
@@ -27,7 +27,7 @@ body {
   height: 100%;
   min-height: 100vh;
   padding: 10px;
-  border: 7px dashed $c-red;
+  border: 7px dashed $c-active;
 }
 
 h1 {
@@ -115,7 +115,7 @@ p {
 }
 
 .red {
-  color: $c-red;
+  color: $c-active;
 }
 
 .app {
@@ -157,7 +157,7 @@ p {
     transform: translateY(-5px);
 
     path {
-      fill: $c-red;
+      fill: $c-active;
     }
   }
 }

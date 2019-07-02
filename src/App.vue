@@ -8,8 +8,8 @@
 
     <section class="container">
       <header class="header">
-        <h1>vue-prlx</h1>
-        <h2 class="it">directive</h2>
+        <h1 class="gray">vue-prlx</h1>
+        <h2 class="gray it">directive</h2>
         <h3>Exactly that vue directive you were looking for! Can animate <span class="red">translate</span> & <span class="red">background-position</span>.</h3>
       </header>
 
@@ -164,6 +164,20 @@
             </div>
           </div>
         </div>
+
+        <button @click="disabled = !disabled">Disable/enable parallax</button>
+        <br>
+        <br>
+        <div class="usage-item">
+          <div class="row">
+            <div class="col_1">
+              <Code lang="xml" :code="code.off" />
+            </div>
+            <div class="col_2">
+              <img src="/img/img11.jpeg" v-prlx="{ disabled }" />
+            </div>
+          </div>
+        </div>
         <!-- USAGE -->
 
       </div>
@@ -183,7 +197,8 @@ export default {
   },
   data () {
     return {
-      code
+      code,
+      disabled: false
     }
   }
 }

@@ -160,5 +160,18 @@ Vue.directive('prlx', VuePrlx.VuePrlxDirective);
   custom: true,
   limit: { min: 0, max: 70 }
 }"&gt;
+  `,
+
+  off: `// Disable parallax
+
+// off
+
+// Conditionally switch animation off
+
+// usage - value key
+// type - boolean
+// default - false
+
+&lt;img v-prlx="{ disabled: disablilityCondition }"&gt;
   `
 }
